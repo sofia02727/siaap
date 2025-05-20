@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b2ff9e;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: #2e2e2e;
+    color: white;
+    width: 220px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    color: #62bb46;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+}
+
+.nav li {
+    margin: 15px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nav li:hover {
+    color: #62bb46;
+}
+
+.logout {
+    margin-top: auto;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ccc;
+}
+
+.logout:hover {
+    color: #f44336;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.main-content h3 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.main-content h4 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.table th {
+    font-weight: bold;
+}
+
+.footer-logo {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.footer-logo img {
+    height: 40px;
+}
+
+.container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #379f49;
+    padding: 1rem;
+}
+
+.form-image img {
+    width: 31rem;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.form-header h1 {
+    position: relative;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #379f49;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.input-box label {
+    margin-left: 1rem;
+    font-weight: 500;
+}
+
+.input-box input {
+    margin-top: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #379f49;
+}
+
+.continue-button button,
+.cancel-button button,
+.entrar-button button,
+.cadastro-button button {
+    width: 100%;
+    margin-top: 1.5rem;
+    border: none;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.93rem;
+}
+
+.continue-button button {
+    background-color: #379f49;
+    color: #000;
+}
+
+.cancel-button button {
+    background-color: #b2ff9e;
+    color: #000;
+}
+
+.entrar-button button {
+    background-color: #379f49;
+    color: #000;
+}
+
+.cadastro-button button {
+    background-color: #b2ff9e;
+    color: #000;
+}
+
+.continue-button button:hover,
+.entrar-button button:hover,
+.cadastro-button button:hover,
+.cancel-button button:hover {
+    opacity: 0.9;
+}
+
+.error-messages {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #ffdddd;
+    border: 1px solid #f17f76;
+    border-radius: 5px;
+    margin-top: -1rem;
+}
+
+.error-message {
+    color: rgb(243, 106, 106);
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+
+    .container {
+        width: 50%;
+        height: auto;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    .form {
+        padding: 2rem;
+    }
+
+    .input-group {
+        padding: 0;
+    }
+}
